@@ -1,0 +1,68 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f8ff; 
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.game-container {
+  background-color: #e9dede;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hint, .hint-controls, .word, .letters, .guess-status, .controls {
+  margin: 20px 0;
+}
+
+.letter {
+  display: inline-block;
+  width: 20px;
+  margin: 0 5px;
+  border-bottom: 2px solid #000;
+  font-size: 1.5em;
+}
+
+.letters button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.guess-status, .game-over {
+  font-size: 1.2em;
+}
+
+.game-over {
+  color: red;
+}
